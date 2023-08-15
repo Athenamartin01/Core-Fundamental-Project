@@ -1,0 +1,69 @@
+html {
+  --s: 50px;
+  --c: #191b22;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+  background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
+
+*{
+    color: rgb(250, 66, 66);
+}
+
+#navbar {
+    color: red;
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+#navbar li {
+    color: red;
+    float: left;
+  }
+  
+#navbar li a, .button_, .input_{
+    color: red;
+    display: block;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+  }
+.button_{
+  background:none;
+  border:none;
+}
+.input_{
+  background:none;
+}
+
+#navbar li a:hover, .button_:hover, .input_:hover{
+    background-color: #111;
+  }
+#navbar li a:active, .button_:active, .input_:active{
+    background-color: rgb(26, 0, 0);
+}
+
+
+footer, #label{
+    color: red;
+    font: italic;
+}
+
+
+
+
+
+

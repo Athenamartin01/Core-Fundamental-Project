@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="item_block">
+    {% for product in prod %}
+    <a href="http://127.0.0.1:5000/{{ product[1] }}">
+        <img src="{{ url_for('static',filename= product[1]+'.jpg') }}" alt="{{ product[0].desc }}">
+        <br>
+        <div>{{ product[0].name }}</div>
+    </a>
+    <br>
+    <div>Amount:     
+        <form method="POST" action="/Cart">
+            <input class="input_" type="number" name="{{ product[0].id }}" min="0" max="{{ product[0].stock }}", value="{{ product[2].amount }}">
+            <div>{{ product[0].id }}</div>
+            <input class="button_" type="submit" value="Add to basket">
+        </form>
+    </div>
+    <br>
+    <div>Price/Item: £{{ product[0].price }} <br> Amount: {{ product[2].amount }} <br> Total Cost: {{ product[0].price * product[2].amount }}</div>
+    <br>
+    
+    {% endfor %}
+    <br>
+    <h2> Total price: £{{ total }}</h2>
+    <br>
+    <ul id="navbar">
+        <li><a href="http://127.0.0.1:5000/Checkout">Checkout</a></li> 
+    </ul>
+</div>
+
+{% endblock body %}

@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% for product in products %}
+
+<div class="item_block">
+    <a href="http://127.0.0.1:5000/{{ product[1] }}">
+        <img src="{{ url_for('static',filename= product[1]+'.jpg') }}" alt="{{ product[0].desc }}">
+        <br>
+        <div>{{ product[0].name }}</div>
+        <br>
+        <div>£{{ product[0].price }}</div>
+        {% if product[0].stock == 0 %}
+        <br>
+        <div><b>OUT OF STOCK</b></div>
+        {% endif %}
+    </a>
+    <br>
+    <br>
+</div>
+{% endfor %}
+
+{% endblock body %}

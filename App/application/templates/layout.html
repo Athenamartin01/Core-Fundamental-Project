@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena's Poker Shop</title>
+</head>
+<body>
+    
+    <nav>
+        <ul id="navbar">
+            <li><a href="http://127.0.0.1:5000/Home">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/Product Listings">Products</a></li>
+            <li><a href="http://127.0.0.1:5000/Categories">Categories</a></li>
+            <li><a href="http://127.0.0.1:5000/Contact">Contact</a></li>
+            <li><a href="http://127.0.0.1:5000/About Us">About Us</a></li>
+            <li id="cart"><a href="http://127.0.0.1:5000/Cart">Cart</a></li> 
+        </ul>
+    </nav>
+    {% block body %} 
+    {% endblock body %} 
+    <footer>
+        <p>Footer info</p>
+    </footer>
+</body>
+
+</html>

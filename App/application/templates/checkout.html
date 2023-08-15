@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form method="POST" action="/Checkout">
+    <fieldset>
+        <legend>Delivery Address:</legend>
+        <label for="line1">Address Line 1:</label>
+        <input class="input_" name="line1" type="text" id="line1">
+        <label for="line2">Address Line 2:</label>
+        <input class="input_" name="line2" type="text" id="line2">
+        <label for="line3">Address Line 3:</label>
+        <input class="input_" name="line3" type="text" id="line3">
+        <label for="city">City:</label>
+        <input class="input_" name="city" type="text" id="city">
+        <label for="pc">Post Code:</label>
+        <input class="input_" name="pc" type="text" id="pc">
+        <input class="button_" type="submit" value="Submit">
+    </fieldset>
+</form>
+{% endblock body%}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="single_item_block">
+    <img src="{{ url_for('static',filename= product[1]+'.jpg') }}" alt="{{ product[0].desc }}">
+    <form method="POST" action="/{{product[1]}}">
+        <input class="input_" type="number" name="amount" min="0" max="{{ pending }}">
+        <input class="button_" type="submit" value="Add to basket">
+    </form>
+    <br>
+    <div>Name: {{ product[0].name }}</div>
+    <br>
+    <div>Category: {{ product[0].category }}</div>
+    <br>
+    <div>Price: £{{ product[0].price }}</div>
+    <br>
+    <div>Left in stock: {{ product[0].stock }}</div>
+    <br>
+    <div>Description: {{ product[0].desc }}</div>
+    <br>
+</div>
+
+
+{% endblock body %}

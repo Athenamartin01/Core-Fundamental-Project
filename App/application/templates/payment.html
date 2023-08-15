@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<form method="POST" action="/Payment">
+    <fieldset>
+        <legend>Payment Details:</legend>
+        <label for="line1">Name on Card:</label>
+        <input class="input_" name="card_name" type="text" id="line1">
+        <label for="line2">Card Number:</label>
+        <input class="input_" name="card_no" type="text" id="line2">
+        <label for="line3">Expiration Date Month:</label>
+        <input class="input_" name="exp1" type="number" id="line3", min="0",max='12'>
+        <label for="city">Expiration Date Year:</label>
+        <input class="input_" name="exp2" type="number" id="city">
+        <label for="pc">Cvv</label>
+        <input class="input_" name="cvv" type="number" id="pc">
+        <input class="button_" type="submit" value="Submit">
+    </fieldset>
+</form>
+{% endblock body%}
