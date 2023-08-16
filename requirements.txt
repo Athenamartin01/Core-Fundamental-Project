@@ -1,9 +1,10 @@
 pytest
 pytest-cov
+pymysql
 sqlalchemy
 flask
 bcrypt
 flask-wtf
 flask-testing
-flask_sqlalchemy
+flask-sqlalchemy
 wtforms
