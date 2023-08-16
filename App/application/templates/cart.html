@@ -12,8 +12,7 @@
     <div>Amount:     
         <form method="POST" action="/Cart">
             <input class="input_" type="number" name="{{ product[0].id }}" min="0" max="{{ product[0].stock }}", value="{{ product[2].amount }}">
-            <div>{{ product[0].id }}</div>
-            <input class="button_" type="submit" value="Add to basket">
+            <input class="button_" type="submit" value="Change Amount">
         </form>
     </div>
     <br>

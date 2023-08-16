@@ -1,5 +1,5 @@
 from application import app,db
-from application.models import Product,Customer,Order
+from application.models import Product
 
 
 with app.app_context():
