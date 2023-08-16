@@ -3,7 +3,7 @@
 {% block body %}
 
 <div class="single_item_block">
-    <img src="{{ url_for('static',filename= product[1]+'.jpg') }}" alt="{{ product[0].desc }}">
+    <img class="image_" src="{{ url_for('static',filename= product[1]+'.jpg') }}" alt="{{ product[0].desc }}">
     <form method="POST" action="/{{product[1]}}">
         <input class="input_" type="number" name="amount" min="0" max="{{ pending }}" value="0">
         <input class="button_" type="submit" value="Add to basket">
