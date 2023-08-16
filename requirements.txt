@@ -3,7 +3,7 @@ pytest-cov
 pymysql
 sqlalchemy
 flask
-bcrypt
+flask-bcrypt
 flask-wtf
 flask-testing
 flask-sqlalchemy
