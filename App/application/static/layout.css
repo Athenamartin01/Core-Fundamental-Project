@@ -18,6 +18,10 @@ html {
     color: rgb(250, 66, 66);
 }
 
+h1{
+  color: rgb(255, 33, 33);
+}
+
 #navbar {
     color: red;
     position: sticky;
@@ -63,7 +67,7 @@ footer, #label{
 }
 
 .image_{
-  width: 512px;
+  width: 256px;
   height: auto;
 }
 
